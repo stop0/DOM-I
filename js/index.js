@@ -118,3 +118,29 @@ botomb3[0].appendChild(document.createTextNode(siteContent["main-content"]["visi
 
 
 /////////////////////////////
+
+let content = document.getElementsByClassName('contact')
+let content1 = content[0].getElementsByTagName('h4')
+let content2 = content[0].getElementsByTagName('p')
+
+
+
+
+
+
+content1[0].appendChild(document.createTextNode(siteContent["contact"]["contact-h4"]))
+
+content2[0].appendChild(document.createTextNode(siteContent["contact"]["address"]))
+content2[1].appendChild(document.createTextNode(siteContent["contact"]["phone"]))
+content2[2].appendChild(document.createTextNode(siteContent["contact"]["email"]))
+
+
+//////////////////
+
+
+let foooters = document.getElementsByTagName('footer')
+
+let foooters1 = foooters[0].getElementsByTagName('p')
+
+foooters1[0].appendChild(document.createTextNode(siteContent["footer"]["copyright"]))
+
