@@ -53,3 +53,30 @@ con[2].appendChild(document.createTextNode(siteContent["nav"]["nav-item-3"]))
 con[3].appendChild(document.createTextNode(siteContent["nav"]["nav-item-4"]))
 con[4].appendChild(document.createTextNode(siteContent["nav"]["nav-item-5"]))
 con[5].appendChild(document.createTextNode(siteContent["nav"]["nav-item-6"]))
+
+
+// 1st section
+
+let ct = document.getElementsByClassName("cta");
+let cta = document.getElementsByClassName("cta-text");
+let txt = cta[0].getElementsByTagName("h1")
+let x = document.createElement("BR")
+// let newdom = x.appendChild(document.createTextNode(siteContent["cta"]["h1"]))
+txt[0].appendChild(document.createTextNode(siteContent["cta"]["h1"]))
+
+let but = cta[0].getElementsByTagName("button")
+but[0].appendChild(document.createTextNode(siteContent["cta"]["button"]))
+
+let img = document.getElementById("cta-img")
+img.setAttribute('src', siteContent["cta"]["img-src"])
+
+//
+let text = document.getElementsByClassName("text-content")
+
+let feat = text[0].getElementsByTagName("h4")
+feat[0].appendChild(document.createTextNode(siteContent["main-content"]["features-h4"]))
+
+
+let para = text[0].getElementsByTagName("p")
+para[0].appendChild(document.createTextNode(siteContent["main-content"]["features-content"]))
+
