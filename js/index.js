@@ -70,7 +70,7 @@ but[0].appendChild(document.createTextNode(siteContent["cta"]["button"]))
 let img = document.getElementById("cta-img")
 img.setAttribute('src', siteContent["cta"]["img-src"])
 
-//
+///////////////////
 let ttop = document.querySelector(".top-content")
 let ttop1 = ttop.querySelectorAll(".text-content")
 
@@ -90,3 +90,31 @@ bb[0].appendChild(document.createTextNode(siteContent["main-content"]["about-con
 
 let logo1 = document.getElementById("middle-img");
 logo1.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//////////////////////
+
+let ttop9 = document.querySelector(".bottom-content")
+let ttop11 = ttop9.querySelectorAll(".text-content")
+
+let botoms1 = ttop11[0].getElementsByTagName('h4')
+let botomb1 = ttop11[0].getElementsByTagName('p')
+
+let botoms2 = ttop11[1].getElementsByTagName('h4')
+let botomb2 = ttop11[1].getElementsByTagName('p')
+
+let botoms3 = ttop11[2].getElementsByTagName('h4')
+let botomb3 = ttop11[2].getElementsByTagName('p')
+
+botoms1[0].appendChild(document.createTextNode(siteContent["main-content"]["services-h4"]))
+botomb1[0].appendChild(document.createTextNode(siteContent["main-content"]["services-content"]))
+
+
+botoms2[0].appendChild(document.createTextNode(siteContent["main-content"]["product-h4"]))
+botomb2[0].appendChild(document.createTextNode(siteContent["main-content"]["product-content"]))
+
+
+botoms3[0].appendChild(document.createTextNode(siteContent["main-content"]["vision-h4"]))
+botomb3[0].appendChild(document.createTextNode(siteContent["main-content"]["vision-content"]))
+
+
+/////////////////////////////
