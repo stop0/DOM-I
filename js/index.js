@@ -71,12 +71,22 @@ let img = document.getElementById("cta-img")
 img.setAttribute('src', siteContent["cta"]["img-src"])
 
 //
-let text = document.getElementsByClassName("text-content")
+let ttop = document.querySelector(".top-content")
+let ttop1 = ttop.querySelectorAll(".text-content")
 
-let feat = text[0].getElementsByTagName("h4")
-feat[0].appendChild(document.createTextNode(siteContent["main-content"]["features-h4"]))
+let s = ttop1[0].getElementsByTagName('h4')
+let b = ttop1[0].getElementsByTagName('p')
+
+let ss = ttop1[1].getElementsByTagName('h4')
+let bb = ttop1[1].getElementsByTagName('p')
+
+s[0].appendChild(document.createTextNode(siteContent["main-content"]["features-h4"]))
+b[0].appendChild(document.createTextNode(siteContent["main-content"]["features-content"]))
 
 
-let para = text[0].getElementsByTagName("p")
-para[0].appendChild(document.createTextNode(siteContent["main-content"]["features-content"]))
+ss[0].appendChild(document.createTextNode(siteContent["main-content"]["about-h4"]))
+bb[0].appendChild(document.createTextNode(siteContent["main-content"]["about-content"]))
 
+
+let logo1 = document.getElementById("middle-img");
+logo1.setAttribute('src', siteContent["main-content"]["middle-img-src"])
