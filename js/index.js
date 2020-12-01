@@ -45,5 +45,11 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 document.title = 'Great Idea!'
 
 // Container
-let con = document.getElementsByTagName("a");
-con.setAttribute('href', siteContent["nav"]["nav-item-1"])
+let con = document.getElementsByTagName("a")
+
+con[0].appendChild(document.createTextNode(siteContent["nav"]["nav-item-1"]))
+con[1].appendChild(document.createTextNode(siteContent["nav"]["nav-item-2"]))
+con[2].appendChild(document.createTextNode(siteContent["nav"]["nav-item-3"]))
+con[3].appendChild(document.createTextNode(siteContent["nav"]["nav-item-4"]))
+con[4].appendChild(document.createTextNode(siteContent["nav"]["nav-item-5"]))
+con[5].appendChild(document.createTextNode(siteContent["nav"]["nav-item-6"]))
