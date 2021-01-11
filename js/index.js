@@ -40,3 +40,107 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Title
+document.title = 'Great Idea!'
+
+// Container
+let con = document.getElementsByTagName("a")
+
+con[0].appendChild(document.createTextNode(siteContent["nav"]["nav-item-1"]))
+con[1].appendChild(document.createTextNode(siteContent["nav"]["nav-item-2"]))
+con[2].appendChild(document.createTextNode(siteContent["nav"]["nav-item-3"]))
+con[3].appendChild(document.createTextNode(siteContent["nav"]["nav-item-4"]))
+con[4].appendChild(document.createTextNode(siteContent["nav"]["nav-item-5"]))
+con[5].appendChild(document.createTextNode(siteContent["nav"]["nav-item-6"]))
+
+
+// 1st section
+
+let ct = document.getElementsByClassName("cta");
+let cta = document.getElementsByClassName("cta-text");
+let txt = cta[0].getElementsByTagName("h1")
+let x = document.createElement("BR")
+// let newdom = x.appendChild(document.createTextNode(siteContent["cta"]["h1"]))
+txt[0].appendChild(document.createTextNode(siteContent["cta"]["h1"]))
+
+let but = cta[0].getElementsByTagName("button")
+but[0].appendChild(document.createTextNode(siteContent["cta"]["button"]))
+
+let img = document.getElementById("cta-img")
+img.setAttribute('src', siteContent["cta"]["img-src"])
+
+///////////////////
+let ttop = document.querySelector(".top-content")
+let ttop1 = ttop.querySelectorAll(".text-content")
+
+let s = ttop1[0].getElementsByTagName('h4')
+let b = ttop1[0].getElementsByTagName('p')
+
+let ss = ttop1[1].getElementsByTagName('h4')
+let bb = ttop1[1].getElementsByTagName('p')
+
+s[0].appendChild(document.createTextNode(siteContent["main-content"]["features-h4"]))
+b[0].appendChild(document.createTextNode(siteContent["main-content"]["features-content"]))
+
+
+ss[0].appendChild(document.createTextNode(siteContent["main-content"]["about-h4"]))
+bb[0].appendChild(document.createTextNode(siteContent["main-content"]["about-content"]))
+
+
+let logo1 = document.getElementById("middle-img");
+logo1.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//////////////////////
+
+let ttop9 = document.querySelector(".bottom-content")
+let ttop11 = ttop9.querySelectorAll(".text-content")
+
+let botoms1 = ttop11[0].getElementsByTagName('h4')
+let botomb1 = ttop11[0].getElementsByTagName('p')
+
+let botoms2 = ttop11[1].getElementsByTagName('h4')
+let botomb2 = ttop11[1].getElementsByTagName('p')
+
+let botoms3 = ttop11[2].getElementsByTagName('h4')
+let botomb3 = ttop11[2].getElementsByTagName('p')
+
+botoms1[0].appendChild(document.createTextNode(siteContent["main-content"]["services-h4"]))
+botomb1[0].appendChild(document.createTextNode(siteContent["main-content"]["services-content"]))
+
+
+botoms2[0].appendChild(document.createTextNode(siteContent["main-content"]["product-h4"]))
+botomb2[0].appendChild(document.createTextNode(siteContent["main-content"]["product-content"]))
+
+
+botoms3[0].appendChild(document.createTextNode(siteContent["main-content"]["vision-h4"]))
+botomb3[0].appendChild(document.createTextNode(siteContent["main-content"]["vision-content"]))
+
+
+/////////////////////////////
+
+let content = document.getElementsByClassName('contact')
+let content1 = content[0].getElementsByTagName('h4')
+let content2 = content[0].getElementsByTagName('p')
+
+
+
+
+
+
+content1[0].appendChild(document.createTextNode(siteContent["contact"]["contact-h4"]))
+
+content2[0].appendChild(document.createTextNode(siteContent["contact"]["address"]))
+content2[1].appendChild(document.createTextNode(siteContent["contact"]["phone"]))
+content2[2].appendChild(document.createTextNode(siteContent["contact"]["email"]))
+
+
+//////////////////
+
+
+let foooters = document.getElementsByTagName('footer')
+
+let foooters1 = foooters[0].getElementsByTagName('p')
+
+foooters1[0].appendChild(document.createTextNode(siteContent["footer"]["copyright"]))
+
